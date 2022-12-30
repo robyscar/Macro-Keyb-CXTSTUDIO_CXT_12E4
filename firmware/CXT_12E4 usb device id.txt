@@ -1,0 +1,44 @@
+* QMK Toolbox 0.2.2 (https://qmk.fm/toolbox)
+* Supported bootloaders:
+*  - ARM DFU (APM32, Kiibohd, STM32, STM32duino) via dfu-util (http://dfu-util.sourceforge.net/)
+*  - Atmel/LUFA/QMK DFU via dfu-programmer (http://dfu-programmer.github.io/)
+*  - Atmel SAM-BA (Massdrop) via Massdrop Loader (https://github.com/massdrop/mdloader)
+*  - BootloadHID (Atmel, PS2AVRGB) via bootloadHID (https://www.obdev.at/products/vusb/bootloadhid.html)
+*  - Caterina (Arduino, Pro Micro) via avrdude (http://nongnu.org/avrdude/)
+*  - HalfKay (Teensy, Ergodox EZ) via Teensy Loader (https://pjrc.com/teensy/loader_cli.html)
+*  - LUFA/QMK HID via hid_bootloader_cli (https://github.com/abcminiuser/lufa)
+*  - LUFA Mass Storage
+* Supported ISP flashers:
+*  - AVRISP (Arduino ISP)
+*  - USBasp (AVR ISP)
+*  - USBTiny (AVR Pocket)
+
+Atmel DFU device connected (libusb0): Atmel Corp. ATmega32U4 (03EB:2FF4:0000)
+Atmel DFU device disconnected (libusb0): Atmel Corp. ATmega32U4 (03EB:2FF4:0000)
+Atmel DFU device connected (libusb0): Atmel Corp. ATmega32U4 (03EB:2FF4:0000)
+
+Please select a file
+Attempting to flash, please don't remove device
+> dfu-programmer.exe atmega32u4 erase --force
+> Erasing flash...  Success
+> Checking memory from 0x0 to 0x6FFF...  Empty.
+> dfu-programmer.exe atmega32u4 flash --force "J:\!DATAFILES\KEYB\CXT_12E4\QMK_TOOLBOX\cxt_labs_cxt12E4_D&M_Rev8_0530.hex"
+> 0%                            100%  Programming 0x6A80 bytes...
+> [>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>]  Success
+> 0%                            100%  Reading 0x7000 bytes...
+> [>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>]  Success
+> Validating...  Success
+> 0x6A80 bytes written into 0x7000 bytes memory (95.09%).
+> dfu-programmer.exe atmega32u4 reset
+Flash complete
+
+Atmel DFU device disconnected (libusb0): Atmel Corp. ATmega32U4 (03EB:2FF4:0000)
+USB device connected (usbaudio): (Generic USB Audio) CXT 12E4 D&M (5754:C401:0008)
+USB device connected (HidUsb): (Standard system devices) USB Input Device (5754:C401:0008)
+USB device connected (usbccgp): (Standard USB Host Controller) USB Composite Device (5754:C401:0008)
+USB device connected (HidUsb): (Standard system devices) USB Input Device (5754:C401:0008)
+
+
+Atmel DFU device connected (libusb0): Atmel Corp. ATmega32U4 (03EB:2FF4:0000)
+Atmel DFU device disconnected (libusb0): Atmel Corp. ATmega32U4 (03EB:2FF4:0000)
+Atmel DFU device connected (libusb0): Atmel Corp. ATmega32U4 (03EB:2FF4:0000)
